@@ -1,16 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from './comps/Navbar'
+import { Provider } from 'react-redux'
+import ReactDom from 'react-dom'
+import store from './app/store'
+import Auth from './comps/Auth'
+import Form from './comps/Form'
+import './App.css'
+import Nopage from './comps/Nopage'
+import News from './comps/News'
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
+ReactDom.render(
+<Provider store={store}>
+  <Router>
+    <Navbar />
+    <Switch>
+         <Route exact path='/' component={Auth}/>
+         <Route exact path='/sign_Up' component={Form}/>
+         <Route exact path='/news' component={News}/>
+         <Route exact path='*' component={Nopage}/>
+    </Switch>
+  </Router>
+</Provider>, 
+  document.getElementById('root'))

@@ -1,0 +1,88 @@
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.wrapper{
+    
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper > h2{
+    text-align: center;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 5px 10px;
+    color: darkgray;
+}
+.wrapper > h3{
+    font-size: 60px;
+    /* max-width: 70%; */
+    font-weight: 700;
+    font-family: monospace;
+    word-spacing: 3px;
+    text-align: center;
+    color: darkslategray;
+    padding: 10px 15px;
+    color: darkgray;
+
+}
+.formWrapper{
+    width: 40%;
+    margin: 0 auth;
+}
+.formWrapper > label{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+::placeholder{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.formWrapper > input{
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+    border: none;
+    outline: none;
+    border: 1px solid darkslategray;
+    border-radius: 5px;
+}
+    .formWrapper > button{
+        padding: 5px 15px;
+        font-weight: 700;
+        text-transform: capitalize;
+        display: block;
+        text-align: center;
+        font-weight: 25px;
+        margin: 0 auto;
+        /* margin-left: 30px; */
+        margin-top: 20px;
+        margin-bottom: 10px;
+    
+    }
+    .color{
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 12px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+.register{
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize; 
+    margin-top: 10px;
+    color: darkgray;
+}

@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navWrapper{
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.navWrapper > header{
+    background: whitesmoke;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+color: skyblue;
+border-radius: 5px;
+border: 2px solid gray;
+    transition: 0.5s all linear;
+box-shadow: 0px 0px 2px 5px rgba(255,255,255,0.5);
+}
+.navWrapper > header:hover{
+    background: white;
+    color: black;
+}
+.navInput{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navInput >  .navform > input{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 15px;
+    display: block;
+}
+.userData{
+    width: 20%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.userData > p{
+    font-size: 18px;
+    font-family: cursive;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.userPhoto{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: red;
+    border: 2px solid whitesmoke;
+    object-fit: contain;
+}
+.userData button{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: cursive;
+    display: block;
+    padding: 2px 5px;
+    height: 30px;
+    color: coral;
+    text-transform: capitalize;
+    margin: auto;
+}
+.welcomeText{
+    width: 80%;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-weight: 700;
+}
